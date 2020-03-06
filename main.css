@@ -1,3 +1,41 @@
+body {
+  background-color: #4747cc;
+  color: white;
+}
+
 #main-content {
   padding: 30px;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: #515152;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#radio-label,
+#select-title {
+  color: white;
+  font-size: 15px;
+}
+
+#email,
+#name,
+#number {
+  color: white;
+  font-size: 15px;
+}
+
+#radio-title {
+  margin-top: 15px;
+  color: white;
+  font-size: 15px;
+}
+
+#textarea1 {
+  height: 200px;
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  padding: 10px;
 }

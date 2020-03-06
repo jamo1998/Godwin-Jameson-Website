@@ -19,7 +19,7 @@
 
 <body>
   <div class="container center">
-    <h1 id="title">Personal Survey Form</h1>
+    <h1 id="title">Coding Survey Form</h1>
     <p id="description">Please take a few minutes to fill out this survey!</p>
   </div>
 
@@ -46,95 +46,96 @@
             <input min="18" max="100" id="number" type="number" placeholder="Enter your age">
           </div>
         </div>
-
-        <label id="">Would you like to become a software developer?</label>
+        <br>
+        <label id="radio-title">Would you like to become a software developer?</label>
         <p>
           <label for="Yes">
             <input id="Yes" value="Yes" name="group1" type="radio" checked />
-            <span>Yes</span>
+            <span id="radio-label">Yes</span>
           </label>
         </p>
         <p>
           <label for="No">
             <input id="No" value="No" name="group1" type="radio" />
-            <span>No</span>
+            <span id="radio-label">No</span>
           </label>
         </p>
         <p>
           <label for="Maybe">
             <input id="Maybe" value="Maybe" class="with-gap" name="group1" type="radio" />
-            <span>Maybe</span>
+            <span id="radio-label">Maybe</span>
           </label>
         </p>
-        <label>Browser Select</label>
+        <br>
+        <label id="select-title">What is your favorite coding language?</label>
+        <br><br>
         <select class="browser-default">
           <option value="" disabled selected>Choose your option</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
+          <option value="1">JavaScript</option>
+          <option value="2">Python</option>
+          <option value="3">Ruby</option>
         </select>
-
-        <label>What skill of development would you like to improve on?</label>
+        <br><br>
+        <label id="select-title">What skill of development would you like to improve on?</label>
         <p>
           <label for="frontend">
             <input type="checkbox" id="frontend" />
-            <span>Front-End</span>
+            <span id="select-title">Front-End</span>
           </label>
         </p>
         <p>
           <label for="backend">
             <input type="checkbox" id="backend" />
-            <span>Back-End</span>
-            </span<>
+            <span id="select-title">Back-End</span>
         </p>
         <p>
           <label for="devops">
             <input type="checkbox" id="devops" />
-            <span>Dev-Ops</span>
+            <span id="select-title">Dev-Ops</span>
           </label>
         </p>
         <p>
           <label for="databases">
             <input type="checkbox" id="databases" />
-            <span>Databases</span>
+            <span id="select-title">Databases</span>
           </label>
         </p>
         <p>
           <label for="serversiderendering">
             <input type="checkbox" id="serversiderendering" />
-            <span>Server-side Rendering</span>
+            <span id="select-title">Server-side Rendering</span>
           </label>
         </p>
         <p>
           <label for="cloudbasedsystems">
             <input type="checkbox" id="cloudbasedsystems" />
-            <span>Cloud based Systems</span>
+            <span id="select-title">Cloud based Systems</span>
           </label>
         </p>
         <p>
           <label for="UIUX">
             <input type="checkbox" id="UIUX" />
-            <span>UI/UX</span>
+            <span id="select-title">UI/UX</span>
           </label>
         </p>
 
         <p>
           <label for="datavisualiztation">
             <input type="checkbox" id="datavisualization" />
-            <span>Data Visualization</span>
+            <span id="select-title">Data Visualization</span>
           </label>
         </p>
 
         <p>
           <label for="oop">
             <input type="checkbox" id="oop" />
-            <span>OOP</span>
+            <span id="select-title">OOP</span>
           </label>
         </p>
         <p>
           <label for="web">
             <input type="checkbox" id="web" />
-            <span>Web Design</span>
+            <span id="select-title">Web Design</span>
           </label>
         </p>
 
@@ -142,12 +143,14 @@
 
         <div class="row">
           <div class="input-field col s12">
+            <span id="select-title">Any additional comments?</span>
+            <br><br>
             <textarea id="textarea1" placeholder="Type here" class="materialize-textarea"></textarea>
           </div>
         </div>
 
         <div class="row">
-          <button type="submit" class="btn btn-large green col s12">Submit</button>
+          <button type="submit" class="btn btn-large primary col s12">Submit</button>
         </div>
       </form>
 
