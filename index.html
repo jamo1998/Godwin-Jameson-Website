@@ -15,7 +15,6 @@
   <div class="container center">
     <h1 id="title">Personal Survey Form</h1>
     <p id="description">Please take a few minutes to fill out this survey!</p>
-
     <form id="survey-form">
       <label id="name-label" for="name">Name</label>
       <input id="name" type="text" placeholder="Enter your name" required>
@@ -26,8 +25,28 @@
       <label id="number-label" for="number">Age (Optional)</label>
       <input min="18" max="100" id="number" type="number" placeholder="Enter your age">
 
+      <label id="">Would you like to become a software developer?</label>
+      <p>
+        <label for="Yes">
+          <input id="Yes" value="Yes" name="group1" type="radio" checked />
+          <span>Yes</span>
+        </label>
+      </p>
+      <p>
+        <label for="No">
+          <input id="No" value="No" name="group1" type="radio" />
+          <span>No</span>
+        </label>
+      </p>
+      <p>
+        <label for="Maybe">
+          <input id="Maybe" value="Maybe" class="with-gap" name="group1" type="radio" />
+          <span>Maybe</span>
+        </label>
+      </p>
 
     </form>
+
   </div>
 
 
