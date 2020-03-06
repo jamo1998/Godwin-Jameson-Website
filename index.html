@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="main.css" type="text/css">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
@@ -10,49 +11,147 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+<!--<div class="row">
+        <div class="col-6">
+          
+        </div>
+      </div>-->
 
 <body>
   <div class="container center">
     <h1 id="title">Personal Survey Form</h1>
     <p id="description">Please take a few minutes to fill out this survey!</p>
-    <form id="survey-form">
-      <label id="name-label" for="name">Name</label>
-      <input id="name" type="text" placeholder="Enter your name" required>
-      <br>
-      <label id="email-label" for="email">Email</label>
-      <input id="email" type="email" placeholder="Enter your email" required>
-      <br>
-      <label id="number-label" for="number">Age (Optional)</label>
-      <input min="18" max="100" id="number" type="number" placeholder="Enter your age">
+  </div>
 
-      <label id="">Would you like to become a software developer?</label>
-      <p>
-        <label for="Yes">
-          <input id="Yes" value="Yes" name="group1" type="radio" checked />
-          <span>Yes</span>
-        </label>
-      </p>
-      <p>
-        <label for="No">
-          <input id="No" value="No" name="group1" type="radio" />
-          <span>No</span>
-        </label>
-      </p>
-      <p>
-        <label for="Maybe">
-          <input id="Maybe" value="Maybe" class="with-gap" name="group1" type="radio" />
-          <span>Maybe</span>
-        </label>
-      </p>
-      <label>Browser Select</label>
-      <select class="browser-default">
-        <option value="" disabled selected>Choose your option</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-      </select>
-    </form>
+  <div id="main-content" class="container">
+    <div class="row">
+      <form id="survey-form col s12">
+        <div class="row">
+          <div class="col s12">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col s12">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col s12">
+            <label id="number-label" for="number">Age (Optional)</label>
+            <input min="18" max="100" id="number" type="number" placeholder="Enter your age">
+          </div>
+        </div>
 
+        <label id="">Would you like to become a software developer?</label>
+        <p>
+          <label for="Yes">
+            <input id="Yes" value="Yes" name="group1" type="radio" checked />
+            <span>Yes</span>
+          </label>
+        </p>
+        <p>
+          <label for="No">
+            <input id="No" value="No" name="group1" type="radio" />
+            <span>No</span>
+          </label>
+        </p>
+        <p>
+          <label for="Maybe">
+            <input id="Maybe" value="Maybe" class="with-gap" name="group1" type="radio" />
+            <span>Maybe</span>
+          </label>
+        </p>
+        <label>Browser Select</label>
+        <select class="browser-default">
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+
+        <label>What skill of development would you like to improve on?</label>
+        <p>
+          <label for="frontend">
+            <input type="checkbox" id="frontend" />
+            <span>Front-End</span>
+          </label>
+        </p>
+        <p>
+          <label for="backend">
+            <input type="checkbox" id="backend" />
+            <span>Back-End</span>
+            </span<>
+        </p>
+        <p>
+          <label for="devops">
+            <input type="checkbox" id="devops" />
+            <span>Dev-Ops</span>
+          </label>
+        </p>
+        <p>
+          <label for="databases">
+            <input type="checkbox" id="databases" />
+            <span>Databases</span>
+          </label>
+        </p>
+        <p>
+          <label for="serversiderendering">
+            <input type="checkbox" id="serversiderendering" />
+            <span>Server-side Rendering</span>
+          </label>
+        </p>
+        <p>
+          <label for="cloudbasedsystems">
+            <input type="checkbox" id="cloudbasedsystems" />
+            <span>Cloud based Systems</span>
+          </label>
+        </p>
+        <p>
+          <label for="UIUX">
+            <input type="checkbox" id="UIUX" />
+            <span>UI/UX</span>
+          </label>
+        </p>
+
+        <p>
+          <label for="datavisualiztation">
+            <input type="checkbox" id="datavisualization" />
+            <span>Data Visualization</span>
+          </label>
+        </p>
+
+        <p>
+          <label for="oop">
+            <input type="checkbox" id="oop" />
+            <span>OOP</span>
+          </label>
+        </p>
+        <p>
+          <label for="web">
+            <input type="checkbox" id="web" />
+            <span>Web Design</span>
+          </label>
+        </p>
+
+
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" placeholder="Type here" class="materialize-textarea"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <button type="submit" class="btn btn-large green col s12">Submit</button>
+        </div>
+      </form>
+
+    </div>
   </div>
 
   <!--JavaScript at end of body for optimized loading-->
